@@ -1,0 +1,85 @@
+Comando do terminal:
+
+cp <nome do arquivo1> <nome do arquivo2>: faz uma cópia do arquivo1 para o arquivo2.
+clear: Limpa todos os comandos.
+----------------------------------------------------------------------------------------------------------------------LISTAR/BUSCAR/LOCALIZAR
+ls: lista todos os arquivos e diretórios dentro do diretório.
+ls -a: lista os diretórios normais e ocultos.
+ls *: mostra tudo que está dentro do diretório sem precisar entrar em um por um.
+ls ?: (?)substitui um caracter para achar e ver o diretório : trybe-> ?rybe.
+less <nome do arquivo>: lista o conteúdo dentro do arquivo em forma exibição (espaço pula pra próxima página) (Q) finaliza
+/<nome da palavra que quer buscar>: marca as palavras.
+
+grep <nome da palavra>: Faz uma busca da palavra 
+grep -i: não importa se é com letra maiuscula ou minuscula.]
+grep 'frase' <nome do arquivo>: busca frases dentro do arquivo.
+grep -iv 'frase' <nome do arquivo>: busca os valores que não correspondem com a busca.
+grep -in : mostra em qual linhas está a busca desejada.
+grep -ic: mostra a quantidade de vezes que a busca é repetida.
+
+find . -name "*.txt": Para listar todos os arquivos que terminam em .txt.
+find . -type d: Para localizar todos os diretórios.
+find . -type f: Para localizar todos os arquivos.
+find ./teste -name "exemplo*": Para localizar tanto arquivos quanto diretórios que comecempor algum trecho.
+find ./teste -type f -name "exemplo*": Para localizar somente arquivos que comecem por algum trecho.
+find ./teste -type d -name "exemplo*": Para localizar somente diretórios que comecem por algum trecho.
+
+----------------------------------------------------------------------------------------------------------------------CRIAR/REMOVER DIR E ARQ
+mkdir <Nome do diretório>: Criar um diretório.
+touch <nome_do_arquivo>.<tipo_do_arquivo>: Cria um arquivo sendo ele em .txt ou .html.
+touch varios_arquivos{1..5}.txt: Cria varios arquivos de uma vez com a numeraçao de 1 ate 5.
+
+rm <nome do arquivo>: Deleta um arquivo.
+rm varios_arquivos{1..5}.txt: Apaga todos os arquivos de mesmo nome com as numerações finais do 1 até o 5.
+rmdir <nome do diretório>: Apaga um diretório.
+rm -rf <nome do diretorio>: Apaga um diretorio que não esta vazio.
+
+----------------------------------------------------------------------------------------------------------------------VOLTAR E ENTRAR EM DIR
+cd <Nome do diretório>: entra dentro do diretório que escolheu.
+cd .: mostra o diretório que está
+cd ..: volta no diretório passado.
+cd ~: volta pro diretorio raiz.
+pwd: Mostra o caminho até o diretório que está.
+
+----------------------------------------------------------------------------------------------------------------------MOSTRAR,INSERIR E JUNTAR ARQ
+cat <nome do arquivo>: Mostra o conteudo dentro do arquivo escolhido.
+cat > <nome do arquivo>: insere valores do arquivo. serve como imput.(ctrl + d) para finalizar
+cat >> : editar e acrescentar valores.(ctrl + d) para finalizar
+cat <arquivo> <arquivo2> > <novo arquivo> : junta o (arquivo + arquivo2) e coloca no (novo arquivo).
+
+----------------------------------------------------------------------------------------------------------------------MOVER,RENOMEAR e ORDENAR
+sort < <arquivo>: ordena em forma crescente.
+sort < cores.txt > coresOrdenadas.txt: pega o arquivo cores.txt e ordena ele de forma crescente no coresOrdenadas.txt.
+mv arquivo1 arquivo> : Renomeia arquivo1 para arquivo2
+mv <nome do arquivo> <nome do diretório>: Mover um arquivo para um outro diretório.
+
+----------------------------------------------------------------------------------------------------------------------QTD PALAVRAS,LINHAS,CARACTERES e BYTES
+wc <arquivo>: (qtd linhas) (qtd palavras) (qtd caracteres).
+wc -w: somente a qtd de palavras.
+wc -l: somente qtd de linhas.
+wc -c: somente qtd de caracteres.
+wc -m: mostra a qtd de bytes nos caracteres.
+
+----------------------------------------------------------------------------------------------------------------------PRIMEIROS E ULTIMOS VALORES
+head <nome do arquivo>: mostra as 10 primeiras linhas(valores).
+head -5 <nome do arquivo>: mostra as 5 primeiras linhas(valores).
+tail <nome do arquivo>: mostra os 10 ultimos valores. [
+tail -5: mostra os 5 ultimos valores.
+
+----------------------------------------------------------------------------------------------------------------------MANUAL
+man <comando>: trás o manual do comendo ex: man ls.
+whatis <comando>: mostra oq o comando faz ex: whatis cp.
+apropos <oq eu quero fazer>: tras todos os comandos que podem se relacionar ao oq eu quero fazer ex: apropos copy, vai trazer todos os comandos de copy.
+
+----------------------------------------------------------------------------------------------------------------------OUTROS
+who: quais usuários utilizam o sistemas ou quais usuarios tem permissao pra usar o arquivo.
+<comando> | <comando> : vai unir 2 comando ao mesmo tempo.
+history: Mostra o histórico de comandos.
+history | tail: # Pega os últimos 10 comandos.
+echo "Este é um teste"
+echo "Este é mais um teste" > teste.txt: Pode ser usado para colocar textos dentro de arquivos.
+cat teste.txt
+
+
+
+

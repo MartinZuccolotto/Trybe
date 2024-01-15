@@ -1,0 +1,22 @@
+Comandos
+git clone: Clona/ baixa um repositorio remoto.
+git remote -v: verifica o repositório atual.
+git brach: verifica as branches existente e atual.
+git checkout -b nome-da-branch: cria uma branch nova e alterna pra ela.
+giit checkout nome-da-branch: alterna para a branch.
+git add nome-do-arquivo: adiciona o arquivo em um espaço temporario de commit.
+git status: verfica o statos dos arquivos do projeto.
+git commit -m 'msg de descrição': cria um ponto de acesso para a alteração e possui uma msg descrevendo a alteração.
+git commit -am 'msg descrevendo a alteração': junta o git add e git commit.
+git pull: traz alterações remotas da branch atuaç
+git pull origin nome-da-branch: Traz alterações que estão na branch remora especificada para a branch atual.
+git push -u origin nome-da-branch: deixa a branch acessivel remotamente e envia as alterações realizadas.
+git push: envia as alteração realizadas na branch atual.
+git push --set-upstream origin nome-da-branch: aparece quando o comando git push é feito e a branch ainda não está acessivel remotamente.
+git log: mostra os registro de commit.
+
+
+
+
+
+
